@@ -12,13 +12,30 @@ function Home() {
           alt=""
         />
         <div className="home__row">
-          <Product />
-          <Product/>
+          <Product 
+          id='12532156596'
+          title='The lean startup' price={29.99} image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
+          rating={5} />
+          <Product
+          id='49538094'
+          title='Kenwood kMix Stand Mixer forBaking,stylish kitchen Mixer with k-beater, Dough hook and whish, 5 litre glass bowl'
+          price={239.00}
+          rating={4}
+          image='https://images-na.ssl-images-amazon.com/images/I/810%2BGNdkzKL._AC_SX450_.jpg'/>
         </div>
 
         <div className="home__row">
 
-            <Product/>
+            <Product
+             id='12532156596'
+             title='The lean startup' price={29.99} image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
+             rating={5} />
+             <Product
+             id='49538094'
+             title='Kenwood kMix Stand Mixer forBaking,stylish kitchen Mixer with k-beater, Dough hook and whish, 5 litre glass bowl'
+             price={239.00}
+             rating={4}
+             image='https://images-na.ssl-images-amazon.com/images/I/810%2BGNdkzKL._AC_SX450_.jpg'/>/>
             <Product/>
             <Product/>
         </div>
