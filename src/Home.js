@@ -21,27 +21,45 @@ function Home() {
           title='Kenwood kMix Stand Mixer forBaking,stylish kitchen Mixer with k-beater, Dough hook and whish, 5 litre glass bowl'
           price={239.00}
           rating={4}
-          image='https://images-na.ssl-images-amazon.com/images/I/810%2BGNdkzKL._AC_SX450_.jpg'/>
+          image='https://kitchenaid-h.assetsadobe.com/is/image/content/dam/global/kitchenaid/countertop-appliance/portable/images/hero-RRK150ER.tif'/>
         </div>
 
         <div className="home__row">
 
             <Product
              id='12532156596'
-             title='The lean startup' price={29.99} image='https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg'
-             rating={5} />
+             title='samsung lcr8irgonm 90' 
+             price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
+             rating={3} />
              <Product
              id='49538094'
-             title='Kenwood kMix Stand Mixer forBaking,stylish kitchen Mixer with k-beater, Dough hook and whish, 5 litre glass bowl'
-             price={239.00}
-             rating={4}
-             image='https://images-na.ssl-images-amazon.com/images/I/810%2BGNdkzKL._AC_SX450_.jpg'/>/>
-            <Product/>
-            <Product/>
+             title='Amazon Echo (3rd)generation | Smart speaker with Alexa, Charcoal Fabric'
+             price={98.99}
+             rating={2}
+             image='https://images-na.ssl-images-amazon.com/images/I/61EfNDEsB-L._AC_SL1000_.jpg'/>
+            <Product
+            id='12532156596'
+            title='samsung lcr8irgonm 90' 
+            price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
+            rating={3}            
+            />
+            <Product
+            id='12532156596'
+            title='samsung lcr8irgonm 90' 
+            price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
+            rating={3}           
+            
+            />
         </div>
 
         <div className="home__row">
-            <Product/>
+            <Product
+            id='12532156596'
+            title='samsung lcr8irgonm 90' 
+            price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
+            rating={3}
+            
+            />
         </div>
       </div>
     </div>
