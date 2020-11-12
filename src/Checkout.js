@@ -20,11 +20,11 @@ function Checkout() {
 
           {basket.map(item =>(
             <CheckoutProduct
-            id={item.id}
-            title={item.title}
-            image={item.image}
-            price={item.price}
-            rating={item.rating}
+            id='1235478'
+            title='this is a test'
+            image="https://m.media-amazon.com/images/I/51WIKlio9qL.jpg"
+            price={239.00}
+            rating={5}
             />
           ))}
 
