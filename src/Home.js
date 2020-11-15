@@ -32,19 +32,19 @@ function Home() {
              price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
              rating={3} />
              <Product
-             id='49538094'
+             id='49538091'
              title='Amazon Echo (3rd)generation | Smart speaker with Alexa, Charcoal Fabric'
              price={98.99}
              rating={2}
              image='https://images-na.ssl-images-amazon.com/images/I/61EfNDEsB-L._AC_SL1000_.jpg'/>
             <Product
-            id='12532156596'
+            id='12532156597'
             title='samsung lcr8irgonm 90' 
             price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
             rating={3}            
             />
             <Product
-            id='12532156596'
+            id='12532156598'
             title='samsung lcr8irgonm 90' 
             price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
             rating={3}           
@@ -54,7 +54,7 @@ function Home() {
 
         <div className="home__row">
             <Product
-            id='12532156596'
+            id='12532156590'
             title='samsung lcr8irgonm 90' 
             price={129.99} image='https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg'
             rating={3}
