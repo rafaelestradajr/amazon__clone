@@ -21,7 +21,7 @@ const [{},dispatch]=useStateValue();
 
 //will only run once when the app component loads....
 useEffect(() => {
-  auth.onAuthStateChanged(authUser =>{
+  auth.onAuthStateChanged((authUser) =>{
     console.log('the user is >>>',authUser);
 
 if (authUser){
@@ -29,8 +29,8 @@ if (authUser){
 
   dispatch({
     type:'SET_USER',
-    user:authUser
-  })
+    user:authUser,
+  });
 
 
 }else {
@@ -38,12 +38,12 @@ if (authUser){
 
   dispatch({
     type:'SET_USER',
-    user:null
-  })
+    user:null,
+  });
 }
 
-  })
-}, [])
+  });
+}, []);
 
 
   return (

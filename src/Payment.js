@@ -1,14 +1,17 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import CheckoutProduct from "./CheckoutProduct";
 import { useStateValue } from "./StateProvider";
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 import "./Payment.css";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./Reducer";
+import axios from "./axios";
+import {db} from './firebase';
 
 function Payment() {
   const [{ basket, user }, dispatch] = useStateValue();
+  const history=useHistory();
 
   const stripe = useStripe();
   const elements = useElements();
@@ -27,7 +30,7 @@ useEffect(() => {
     const response = await axios ({
       method:'post',
       // Stripe expects the total in a currencies subunits
-      url:`/payments/create?total= ${getBasketTotal(basket) *100}`
+      url:`/payments/create?total= ${getBasketTotal(basket) * 100}`
     });
     setClientSecret(response.data.clientSecret)
 
@@ -35,6 +38,7 @@ useEffect(() => {
   getClientSecret();
 
 }, [basket])
+console.log('the secret is >>>', clientSecret)
 
 
   const handleSubmit = async (event) => {
@@ -51,7 +55,7 @@ useEffect(() => {
       setError(null)
       setProcessing(false)
 
-      history.replaceState('/orders')
+      history.replace('/orders')
 
 
     })
