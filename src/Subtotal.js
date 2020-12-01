@@ -36,7 +36,7 @@ const[{basket},dispatch]=useStateValue();
 
             <button onClick={e=> history.push('/payment')}>Proceed to Checkout</button>
         </div>
-    )
+    );
 }
 
 export default Subtotal

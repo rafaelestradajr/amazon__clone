@@ -45,8 +45,8 @@ function Payment() {
     const payload = await stripe
       .confirmCardPayment(clientSecret, {
         payment_method: {
-          card: elements.getElement(CardElement),
-        },
+          card: elements.getElement(CardElement)
+        }
       })
       .then(({ paymentIntent }) => {
         // paymentIntent = payment confirmation

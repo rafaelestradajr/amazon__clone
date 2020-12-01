@@ -10,9 +10,7 @@ const removeFromBasket=()=>{
 dispatch({
   type:'REMOVE__FROM__BASKET',
   id:id,
-}
-
-)
+})
 
 
 }
